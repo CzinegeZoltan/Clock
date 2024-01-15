@@ -37,22 +37,24 @@ namespace Clock
             // 
             this.lblTime.AutoSize = true;
             this.lblTime.BackColor = System.Drawing.Color.Black;
-            this.lblTime.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblTime.Font = new System.Drawing.Font("LCARS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lblTime.ForeColor = System.Drawing.Color.White;
-            this.lblTime.Location = new System.Drawing.Point(27, 23);
+            this.lblTime.Location = new System.Drawing.Point(84, 41);
             this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(0, 15);
+            this.lblTime.Size = new System.Drawing.Size(44, 13);
             this.lblTime.TabIndex = 0;
+            this.lblTime.Text = "Time and date";
+            this.lblTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(244, 101);
+            this.ClientSize = new System.Drawing.Size(204, 101);
             this.Controls.Add(this.lblTime);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(260, 140);
+            this.MinimumSize = new System.Drawing.Size(220, 140);
             this.Name = "Form1";
             this.Text = "Clock";
             this.Load += new System.EventHandler(this.Form1_Load);

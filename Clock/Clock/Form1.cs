@@ -52,7 +52,7 @@ namespace Clock
         {
             SetFontSize();
         }
-
+        //betűméret -- font size
         private void SetInitialFontSize()
         {
             float fontSize = Math.Max(DefaultFontSize, Math.Min(this.Width, this.Height) / 3.9f);
@@ -74,7 +74,7 @@ namespace Clock
         {
             control.GetType().GetProperty("DoubleBuffered", System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic)?.SetValue(control, true, null);
         }
-
+        // kiírás formázás -- text format
         private string GetFormattedTime()
         {
             string timeText = DateTime.Now.ToString("HH:mm:ss\nyyyy.MM.dd");
